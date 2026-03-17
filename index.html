@@ -14,26 +14,78 @@
 
 <style>
 
-.hero{
-background:linear-gradient(135deg,#eef2ff,#f8fafc);
-padding:160px 20px;
+body{
+font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+color:#111827;
 }
+
+/* HERO */
+
+.hero{
+background:linear-gradient(120deg,#eef2ff,#f8fafc);
+padding:180px 20px;
+position:relative;
+overflow:hidden;
+}
+
+/* decorative background shape */
+
+.hero::after{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:#c7d2fe;
+border-radius:50%;
+top:-200px;
+right:-200px;
+opacity:0.4;
+}
+
+/* sections */
 
 .section{
 padding:110px 20px;
 }
 
+/* headings */
+
+h2{
+font-weight:700;
+letter-spacing:-0.5px;
+}
+
+/* cards */
+
 .card{
 border:none;
-border-radius:12px;
-box-shadow:0 15px 35px rgba(0,0,0,0.08);
-transition:all .2s ease;
+border-radius:16px;
+padding:30px;
+box-shadow:0 20px 40px rgba(0,0,0,0.08);
+transition:all .3s ease;
+background:white;
 }
 
 .card:hover{
-transform:translateY(-6px);
-box-shadow:0 20px 45px rgba(0,0,0,0.12);
+transform:translateY(-10px);
+box-shadow:0 30px 60px rgba(0,0,0,0.15);
 }
+
+/* buttons */
+
+.btn-primary{
+background:#2563eb;
+border:none;
+padding:14px 30px;
+border-radius:10px;
+}
+
+.btn-outline-primary{
+border-radius:10px;
+padding:14px 30px;
+}
+
+/* CTA */
 
 .cta{
 background:#1e3a8a;
@@ -41,6 +93,8 @@ color:white;
 padding:120px 20px;
 text-align:center;
 }
+
+/* footer */
 
 .footer{
 background:#111827;
@@ -157,50 +211,9 @@ East Wind Solutions works with organizations involved in technology education an
 </section>
 
 
-<!-- WHY EAST WIND SOLUTIONS -->
-
-<section class="section bg-light">
-
-<div class="container">
-
-<h2 class="text-center mb-5">Why East Wind Solutions</h2>
-
-<div class="row g-4 text-center">
-
-<div class="col-md-3">
-<i class="bi bi-people-fill text-primary" style="font-size:40px"></i>
-<h5 class="mt-3">Curated Trainer Network</h5>
-<p>Experienced instructors across modern technology domains.</p>
-</div>
-
-<div class="col-md-3">
-<i class="bi bi-lightning-fill text-primary" style="font-size:40px"></i>
-<h5 class="mt-3">Rapid Trainer Matching</h5>
-<p>Quick identification of trainers suited for program needs.</p>
-</div>
-
-<div class="col-md-3">
-<i class="bi bi-laptop-fill text-primary" style="font-size:40px"></i>
-<h5 class="mt-3">Modern Technologies</h5>
-<p>Expertise across cloud, AI, DevOps, cybersecurity and more.</p>
-</div>
-
-<div class="col-md-3">
-<i class="bi bi-building text-primary" style="font-size:40px"></i>
-<h5 class="mt-3">Enterprise Programs</h5>
-<p>Support for corporate training initiatives and bootcamps.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
 <!-- TECHNOLOGY DOMAINS -->
 
-<section class="section">
+<section class="section bg-light">
 
 <div class="container">
 
@@ -209,42 +222,42 @@ East Wind Solutions works with organizations involved in technology education an
 <div class="row g-4">
 
 <div class="col-md-4">
-<div class="card p-4">
+<div class="card">
 <h5><i class="bi bi-cloud-fill text-primary me-2"></i>Cloud Computing</h5>
 <p>AWS, Azure, cloud architecture and infrastructure.</p>
 </div>
 </div>
 
 <div class="col-md-4">
-<div class="card p-4">
+<div class="card">
 <h5><i class="bi bi-gear-fill text-primary me-2"></i>DevOps</h5>
 <p>CI/CD pipelines, automation, Kubernetes.</p>
 </div>
 </div>
 
 <div class="col-md-4">
-<div class="card p-4">
+<div class="card">
 <h5><i class="bi bi-cpu-fill text-primary me-2"></i>AI & Data Science</h5>
 <p>Machine learning, Python, data engineering.</p>
 </div>
 </div>
 
 <div class="col-md-4">
-<div class="card p-4">
+<div class="card">
 <h5><i class="bi bi-shield-lock-fill text-primary me-2"></i>Cybersecurity</h5>
 <p>Security architecture and ethical hacking.</p>
 </div>
 </div>
 
 <div class="col-md-4">
-<div class="card p-4">
+<div class="card">
 <h5><i class="bi bi-code-slash text-primary me-2"></i>Full Stack Development</h5>
 <p>Java, microservices, cloud-native development.</p>
 </div>
 </div>
 
 <div class="col-md-4">
-<div class="card p-4">
+<div class="card">
 <h5><i class="bi bi-motherboard-fill text-primary me-2"></i>Embedded Systems</h5>
 <p>Automotive software and embedded platforms.</p>
 </div>
