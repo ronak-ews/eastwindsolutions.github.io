@@ -17,18 +17,19 @@ body{
 font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
 color:#111827;
 background:white;
-padding-top:80px;
+padding-top:70px;
 }
 
 /* NAVBAR */
 
 .navbar{
-background:#111827;
+background:#0f172a;
 }
 
 .navbar .nav-link{
 color:white !important;
-margin-left:10px;
+margin-left:12px;
+font-weight:500;
 }
 
 .navbar .nav-link:hover{
@@ -37,12 +38,13 @@ opacity:0.8;
 
 .navbar-brand{
 color:white !important;
+font-weight:700;
 }
 
 /* HERO */
 
 .hero{
-padding:160px 20px 120px 20px;
+padding:140px 20px 100px 20px;
 
 background:
 radial-gradient(circle at 70% 40%,rgba(99,102,241,0.15),transparent 40%),
@@ -53,7 +55,7 @@ border-bottom:1px solid #e5e7eb;
 }
 
 .hero h1{
-font-size:64px;
+font-size:60px;
 font-weight:800;
 line-height:1.05;
 letter-spacing:-1px;
@@ -68,7 +70,7 @@ max-width:520px;
 /* SECTIONS */
 
 .section{
-padding:120px 20px;
+padding:100px 20px;
 }
 
 .section-light{
@@ -78,7 +80,7 @@ background:#f9fafb;
 /* TYPOGRAPHY */
 
 h2{
-font-size:40px;
+font-size:38px;
 font-weight:800;
 letter-spacing:-0.5px;
 }
@@ -130,20 +132,9 @@ color:#111827;
 
 .hero-graphic{
 background:#f9fafb;
-border-radius:24px;
-overflow: hidden;
-box-shadow:0 30px 60px rgba(0,0,0,0.12);
-transition: transform 0.3s ease;
-}
-
-.hero-graphic:hover {
-    transform: scale(1.02);
-}
-
-.hero-graphic img {
-    width: 100%;
-    height: auto;
-    display: block;
+border-radius:16px;
+padding:40px;
+box-shadow:0 30px 60px rgba(0,0,0,0.08);
 }
 
 /* CTA */
@@ -151,7 +142,7 @@ transition: transform 0.3s ease;
 .cta{
 background:#111827;
 color:white;
-padding:140px 20px;
+padding:110px 20px;
 text-align:center;
 }
 
@@ -171,11 +162,13 @@ text-align:center;
 <body>
 
 
+<!-- NAVBAR -->
+
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
 <div class="container">
 
-<a class="navbar-brand fw-bold" href="index.html">East Wind Solutions</a>
+<a class="navbar-brand" href="index.html">East Wind Solutions</a>
 
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
 <span class="navbar-toggler-icon"></span>
@@ -201,6 +194,8 @@ text-align:center;
 </nav>
 
 
+
+<!-- HERO -->
 
 <section class="hero">
 
@@ -239,7 +234,23 @@ Hire Trainers
 
 <div class="hero-graphic">
 
-<img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Professional Tech Training Illustration">
+<svg width="100%" height="260">
+
+<rect x="0" y="0" width="100%" height="40" fill="#e5e7eb"/>
+
+<circle cx="20" cy="20" r="6" fill="#ef4444"/>
+<circle cx="40" cy="20" r="6" fill="#f59e0b"/>
+<circle cx="60" cy="20" r="6" fill="#10b981"/>
+
+<rect x="20" y="80" width="120" height="20" fill="#6366f1"/>
+<rect x="20" y="120" width="200" height="14" fill="#d1d5db"/>
+<rect x="20" y="150" width="160" height="14" fill="#d1d5db"/>
+
+<rect x="260" y="80" width="120" height="20" fill="#6366f1"/>
+<rect x="260" y="120" width="160" height="14" fill="#d1d5db"/>
+<rect x="260" y="150" width="200" height="14" fill="#d1d5db"/>
+
+</svg>
 
 </div>
 
@@ -253,11 +264,13 @@ Hire Trainers
 
 
 
+<!-- ECOSYSTEM -->
+
 <section class="section section-light">
 
 <div class="container text-center">
 
-<h2 class="mb-5">
+<h2 class="mb-4">
 
 Supporting the Technology Training Ecosystem
 
@@ -283,6 +296,8 @@ East Wind Solutions collaborates with organizations involved in technology educa
 </section>
 
 
+
+<!-- TECHNOLOGY DOMAINS -->
 
 <section class="section">
 
@@ -352,6 +367,8 @@ Technology Domains
 
 
 
+<!-- CTA -->
+
 <section class="cta">
 
 <h2 class="mb-4">
@@ -375,6 +392,8 @@ Apply to Join
 </section>
 
 
+
+<!-- FOOTER -->
 
 <div class="footer">
 
