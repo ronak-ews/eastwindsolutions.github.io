@@ -13,8 +13,10 @@
 
 <style>
 
+/* GLOBAL */
+
 body{
-font-family: system-ui,-apple-system,Segoe UI,Roboto;
+font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
 color:#111827;
 background:white;
 }
@@ -22,45 +24,39 @@ background:white;
 /* HERO */
 
 .hero{
-background:white;
-padding:160px 20px;
+padding:180px 20px 140px 20px;
 border-bottom:1px solid #e5e7eb;
+}
+
+.hero h1{
+font-size:64px;
+font-weight:800;
+line-height:1.1;
+letter-spacing:-1px;
+}
+
+.hero p{
+font-size:20px;
+color:#6b7280;
+max-width:520px;
 }
 
 /* SECTIONS */
 
 .section{
-padding:110px 20px;
+padding:120px 20px;
 }
 
 .section-light{
 background:#f9fafb;
 }
 
-.section-dark{
-background:white;
-}
-
-/* HEADINGS */
+/* TYPOGRAPHY */
 
 h2{
-font-weight:700;
+font-size:40px;
+font-weight:800;
 letter-spacing:-0.5px;
-}
-
-/* CARDS */
-
-.card{
-border:1px solid #e5e7eb;
-border-radius:14px;
-padding:30px;
-transition:all .25s ease;
-background:white;
-}
-
-.card:hover{
-transform:translateY(-6px);
-box-shadow:0 15px 40px rgba(0,0,0,0.08);
 }
 
 /* BUTTONS */
@@ -68,14 +64,14 @@ box-shadow:0 15px 40px rgba(0,0,0,0.08);
 .btn-primary{
 background:#111827;
 border:none;
-padding:14px 30px;
+padding:14px 28px;
 border-radius:8px;
 }
 
 .btn-outline-primary{
 border:1px solid #111827;
 color:#111827;
-padding:14px 30px;
+padding:14px 28px;
 border-radius:8px;
 }
 
@@ -84,22 +80,54 @@ background:#111827;
 color:white;
 }
 
+/* MODERN CARDS */
+
+.feature-card{
+
+border:1px solid #e5e7eb;
+border-radius:16px;
+padding:40px 30px;
+background:white;
+transition:all .25s ease;
+height:100%;
+
+}
+
+.feature-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,0.08);
+
+}
+
+.feature-icon{
+
+font-size:34px;
+margin-bottom:16px;
+color:#111827;
+
+}
+
 /* CTA */
 
 .cta{
+
 background:#111827;
 color:white;
 padding:120px 20px;
 text-align:center;
+
 }
 
 /* FOOTER */
 
 .footer{
+
 background:#000;
 color:#9ca3af;
-padding:50px;
+padding:60px;
 text-align:center;
+
 }
 
 </style>
@@ -107,6 +135,7 @@ text-align:center;
 </head>
 
 <body>
+
 
 <!-- NAVBAR -->
 
@@ -140,6 +169,7 @@ text-align:center;
 </nav>
 
 
+
 <!-- HERO -->
 
 <section class="hero">
@@ -150,12 +180,17 @@ text-align:center;
 
 <div class="col-md-6">
 
-<h1 class="display-3 fw-bold mb-4">
-Expert IT Trainers for Technology Training Programs
+<h1 class="mb-4">
+
+Expert IT Trainers for  
+Technology Training Programs
+
 </h1>
 
-<p class="lead mb-4">
+<p class="mb-4">
+
 East Wind Solutions connects experienced technology trainers with organizations delivering corporate training programs, certification courses, and technology bootcamps.
+
 </p>
 
 <a class="btn btn-primary btn-lg me-3" href="join-trainers.html">
@@ -168,11 +203,12 @@ Hire Trainers
 
 </div>
 
+
 <div class="col-md-6 text-center">
 
 <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
 class="img-fluid rounded"
-style="max-width:480px"
+style="max-width:520px"
 alt="Technology Training">
 
 </div>
@@ -184,16 +220,23 @@ alt="Technology Training">
 </section>
 
 
+
 <!-- ECOSYSTEM -->
 
 <section class="section section-light">
 
 <div class="container text-center">
 
-<h2 class="mb-4">Supporting the Technology Training Ecosystem</h2>
+<h2 class="mb-5">
+
+Supporting the Technology Training Ecosystem
+
+</h2>
 
 <p class="mb-5">
-East Wind Solutions works with organizations involved in technology education and workforce development.
+
+East Wind Solutions collaborates with organizations involved in technology education and workforce development.
+
 </p>
 
 <div class="row">
@@ -210,80 +253,173 @@ East Wind Solutions works with organizations involved in technology education an
 </section>
 
 
+
 <!-- TECHNOLOGY DOMAINS -->
 
-<section class="section section-dark">
+<section class="section">
 
 <div class="container">
 
-<h2 class="text-center mb-5">Technology Domains</h2>
+<h2 class="text-center mb-5">
+
+Technology Domains
+
+</h2>
 
 <div class="row g-4">
 
-<div class="col-md-4">
-<div class="card">
-<h5><i class="bi bi-cloud-fill me-2"></i>Cloud Computing</h5>
-<p>AWS, Azure, cloud architecture and infrastructure.</p>
-</div>
-</div>
 
 <div class="col-md-4">
-<div class="card">
-<h5><i class="bi bi-gear-fill me-2"></i>DevOps</h5>
-<p>CI/CD pipelines, automation, Kubernetes.</p>
-</div>
+
+<div class="feature-card text-center">
+
+<div class="feature-icon">
+<i class="bi bi-cloud-fill"></i>
 </div>
 
-<div class="col-md-4">
-<div class="card">
-<h5><i class="bi bi-cpu-fill me-2"></i>AI & Data Science</h5>
-<p>Machine learning, Python, data engineering.</p>
-</div>
+<h5>Cloud Computing</h5>
+
+<p>
+AWS, Azure, cloud architecture and infrastructure.
+</p>
+
 </div>
 
-<div class="col-md-4">
-<div class="card">
-<h5><i class="bi bi-shield-lock-fill me-2"></i>Cybersecurity</h5>
-<p>Security architecture and ethical hacking.</p>
-</div>
 </div>
 
-<div class="col-md-4">
-<div class="card">
-<h5><i class="bi bi-code-slash me-2"></i>Full Stack Development</h5>
-<p>Java, microservices, cloud-native development.</p>
-</div>
-</div>
+
 
 <div class="col-md-4">
-<div class="card">
-<h5><i class="bi bi-motherboard-fill me-2"></i>Embedded Systems</h5>
-<p>Automotive software and embedded platforms.</p>
+
+<div class="feature-card text-center">
+
+<div class="feature-icon">
+<i class="bi bi-gear-fill"></i>
 </div>
+
+<h5>DevOps</h5>
+
+<p>
+CI/CD pipelines, automation, Kubernetes.
+</p>
+
 </div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<div class="feature-card text-center">
+
+<div class="feature-icon">
+<i class="bi bi-cpu-fill"></i>
+</div>
+
+<h5>AI & Data Science</h5>
+
+<p>
+Machine learning, Python, data engineering.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<div class="feature-card text-center">
+
+<div class="feature-icon">
+<i class="bi bi-shield-lock-fill"></i>
+</div>
+
+<h5>Cybersecurity</h5>
+
+<p>
+Security architecture and ethical hacking.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<div class="feature-card text-center">
+
+<div class="feature-icon">
+<i class="bi bi-code-slash"></i>
+</div>
+
+<h5>Full Stack Development</h5>
+
+<p>
+Java, microservices, cloud-native development.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<div class="feature-card text-center">
+
+<div class="feature-icon">
+<i class="bi bi-motherboard-fill"></i>
+</div>
+
+<h5>Embedded Systems</h5>
+
+<p>
+Automotive software and embedded platforms.
+</p>
+
+</div>
+
+</div>
+
 
 </div>
 
 </div>
 
 </section>
+
 
 
 <!-- CTA -->
 
 <section class="cta">
 
-<h2 class="mb-4">Join Our Trainer Network</h2>
+<h2 class="mb-4">
+
+Join Our Trainer Network
+
+</h2>
 
 <p class="mb-4">
+
 Work with organizations delivering technology training programs.
+
 </p>
 
 <a href="join-trainers.html" class="btn btn-light btn-lg">
+
 Apply to Join
+
 </a>
 
 </section>
+
 
 
 <!-- FOOTER -->
