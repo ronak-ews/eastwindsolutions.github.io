@@ -1,131 +1,78 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <title>East Wind Solutions</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
 body{
-font-family:'Poppins',sans-serif;
+font-family: Arial, sans-serif;
 margin:0;
-background:#f7f9fc;
-color:#333;
-}
-
-nav{
-background:#0f172a;
-padding:18px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-nav h2{
-color:white;
-margin:0;
-font-weight:600;
-}
-
-nav a{
-color:#cbd5f5;
-text-decoration:none;
-margin-left:20px;
-font-size:14px;
+background:#f5f7fb;
+color:#1f2937;
 }
 
 header{
-background:linear-gradient(120deg,#1e293b,#334155);
+background:#1e3a8a;
 color:white;
-padding:120px 20px;
+padding:40px;
 text-align:center;
 }
 
-header h1{
-font-size:48px;
-margin-bottom:10px;
-}
-
-header p{
-font-size:20px;
-opacity:0.85;
-}
-
-.container{
-max-width:1100px;
+section{
+padding:50px;
+max-width:1000px;
 margin:auto;
-padding:70px 20px;
 }
 
-.section-title{
-font-size:32px;
-margin-bottom:20px;
-font-weight:600;
+h1{
+margin:0;
+font-size:40px;
 }
 
-.section-sub{
-max-width:700px;
-color:#555;
+h2{
+color:#1e3a8a;
 }
 
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:25px;
-margin-top:40px;
-}
-
-.card{
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card h3{
-margin-top:10px;
-}
-
-.why{
-background:#eef2ff;
-}
-
-.why-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+.features{
+display:flex;
 gap:30px;
-margin-top:30px;
+flex-wrap:wrap;
 }
 
-.why-item{
+.feature{
 background:white;
-padding:25px;
-border-radius:8px;
-box-shadow:0 5px 20px rgba(0,0,0,0.06);
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+flex:1;
+min-width:250px;
 }
 
-.contact{
-background:#0f172a;
+.cta{
+background:#2563eb;
 color:white;
+text-align:center;
+padding:40px;
 }
 
-.contact p{
-color:#cbd5f5;
+button{
+background:white;
+color:#2563eb;
+border:none;
+padding:12px 25px;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
 }
 
 footer{
-background:#020617;
-color:#aaa;
 text-align:center;
-padding:25px;
+padding:20px;
+font-size:14px;
+color:#6b7280;
 }
 
 </style>
@@ -134,152 +81,70 @@ padding:25px;
 
 <body>
 
-<nav>
-<h2>East Wind Solutions</h2>
-
-<div>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#why">Why Us</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
-
 <header>
 
 <h1>East Wind Solutions</h1>
 
-<p>Trainer Supply Partner for Corporate Training Programs</p>
+<p>Expert IT Trainers for Technology Training Programs</p>
 
 </header>
 
-<div class="container" id="about">
+<section>
 
-<h2 class="section-title">About Us</h2>
-
-<p class="section-sub">
-
-East Wind Solutions provides experienced trainers for corporate training programs,
-bootcamps, and academic upskilling initiatives. We help training companies and
-organizations deliver high-quality technical training by providing reliable,
-industry-experienced instructors across key technology domains.
-
-</p>
-
-</div>
-
-<div class="container" id="services">
-
-<h2 class="section-title">Services</h2>
-
-<div class="services">
-
-<div class="card">
-
-<h3>Corporate Technical Training</h3>
-
-<p>
-Experienced trainers for enterprise upskilling programs across modern technology stacks.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Trainer On Demand</h3>
-
-<p>
-Quick access to reliable trainers for urgent or short-term training requirements.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Bootcamp Delivery</h3>
-
-<p>
-Support for intensive bootcamps delivered for corporates and academic institutions.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>University Programs</h3>
-
-<p>
-Industry trainers for finishing school and academic skill development initiatives.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="container why" id="why">
-
-<h2 class="section-title">Why Choose Us</h2>
-
-<div class="why-grid">
-
-<div class="why-item">
-
-<h3>Experienced Trainers</h3>
-
-<p>
-Our network includes trainers with real industry experience and corporate delivery expertise.
-</p>
-
-</div>
-
-<div class="why-item">
-
-<h3>Fast Trainer Availability</h3>
-
-<p>
-Quick turnaround for trainer requirements so programs start on time.
-</p>
-
-</div>
-
-<div class="why-item">
-
-<h3>Quality Focus</h3>
-
-<p>
-We prioritize reliable trainers who can deliver high-quality learning experiences.
-</p>
-
-</div>
-
-<div class="why-item">
-
-<h3>Flexible Engagement</h3>
-
-<p>
-Support for both short-term training programs and longer engagements.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="container contact" id="contact">
-
-<h2 class="section-title">Contact</h2>
+<h2>Supporting Technology Training Programs</h2>
 
 <p>
 
-<b>Ronak Sheikh</b><br>
-East Wind Solutions<br><br>
-
-Email: contact@eastwindsolutions.in
+East Wind Solutions connects experienced technology trainers with organizations delivering professional training programs, corporate upskilling initiatives, and technology bootcamps.
 
 </p>
+
+</section>
+
+<section>
+
+<h2>Technology Domains</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Cloud & DevOps</h3>
+<p>AWS, Azure, Kubernetes, DevOps pipelines.</p>
+</div>
+
+<div class="feature">
+<h3>Data & AI</h3>
+<p>Data Science, Machine Learning, Python, AI.</p>
+</div>
+
+<div class="feature">
+<h3>Software Development</h3>
+<p>Java, Full Stack Development, Microservices.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Trainer Network</h2>
+
+<p>
+
+Our trainer network includes experienced professionals who have delivered technology training programs for corporate teams, professional learners, and certification programs across multiple domains.
+
+</p>
+
+</section>
+
+<div class="cta">
+
+<h2>Join Our Trainer Network</h2>
+
+<p>Interested in training opportunities across technology programs?</p>
+
+<button>Apply as Trainer</button>
 
 </div>
 
