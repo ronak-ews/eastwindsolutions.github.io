@@ -1,78 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>East Wind Solutions</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
 
 body{
 font-family: Arial, sans-serif;
-margin:0;
-background:#f5f7fb;
-color:#1f2937;
 }
 
-header{
-background:#1e3a8a;
-color:white;
-padding:40px;
-text-align:center;
+.hero{
+background:#f3f6fc;
+padding:100px 20px;
 }
 
-section{
-padding:50px;
-max-width:1000px;
-margin:auto;
+.section{
+padding:80px 20px;
 }
 
-h1{
-margin:0;
-font-size:40px;
-}
-
-h2{
-color:#1e3a8a;
-}
-
-.features{
-display:flex;
-gap:30px;
-flex-wrap:wrap;
-}
-
-.feature{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-flex:1;
-min-width:250px;
+.card{
+border:none;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
 .cta{
-background:#2563eb;
+background:#1e3a8a;
 color:white;
+padding:80px 20px;
 text-align:center;
-padding:40px;
 }
 
-button{
-background:white;
-color:#2563eb;
-border:none;
-padding:12px 25px;
-font-size:16px;
-border-radius:5px;
-cursor:pointer;
-}
-
-footer{
+.footer{
+background:#111827;
+color:#9ca3af;
+padding:30px;
 text-align:center;
-padding:20px;
-font-size:14px;
-color:#6b7280;
 }
 
 </style>
@@ -81,78 +50,258 @@ color:#6b7280;
 
 <body>
 
-<header>
+<!-- NAVBAR -->
 
-<h1>East Wind Solutions</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
 
-<p>Expert IT Trainers for Technology Training Programs</p>
+<div class="container">
 
-</header>
+<a class="navbar-brand fw-bold" href="#">East Wind Solutions</a>
 
-<section>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
 
-<h2>Supporting Technology Training Programs</h2>
+<span class="navbar-toggler-icon"></span>
 
-<p>
+</button>
 
-East Wind Solutions connects experienced technology trainers with organizations delivering professional training programs, corporate upskilling initiatives, and technology bootcamps.
+<div class="collapse navbar-collapse" id="nav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Trainer Network</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Technology Domains</a></li>
+<li class="nav-item"><a class="nav-link" href="#">How It Works</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Join as Trainer</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container text-center">
+
+<h1 class="display-5 fw-bold mb-4">
+
+Expert IT Trainers for Technology Training Programs
+
+</h1>
+
+<p class="lead mb-4">
+
+East Wind Solutions connects experienced technology trainers with organizations delivering corporate training programs, professional certification courses, and technology bootcamps.
 
 </p>
 
-</section>
-
-<section>
-
-<h2>Technology Domains</h2>
-
-<div class="features">
-
-<div class="feature">
-<h3>Cloud & DevOps</h3>
-<p>AWS, Azure, Kubernetes, DevOps pipelines.</p>
-</div>
-
-<div class="feature">
-<h3>Data & AI</h3>
-<p>Data Science, Machine Learning, Python, AI.</p>
-</div>
-
-<div class="feature">
-<h3>Software Development</h3>
-<p>Java, Full Stack Development, Microservices.</p>
-</div>
+<button class="btn btn-primary btn-lg me-2">Join Trainer Network</button>
+<button class="btn btn-outline-primary btn-lg">Hire Trainers</button>
 
 </div>
 
 </section>
 
-<section>
 
-<h2>Trainer Network</h2>
+<!-- ECOSYSTEM -->
 
-<p>
+<section class="section">
 
-Our trainer network includes experienced professionals who have delivered technology training programs for corporate teams, professional learners, and certification programs across multiple domains.
+<div class="container text-center">
+
+<h2 class="mb-4">Supporting the Technology Training Ecosystem</h2>
+
+<p class="mb-5">
+
+East Wind Solutions collaborates with organizations involved in technology education and workforce development.
 
 </p>
 
-</section>
+<div class="row">
 
-<div class="cta">
+<div class="col-md-3">
+<h5>IT Training Providers</h5>
+</div>
 
-<h2>Join Our Trainer Network</h2>
+<div class="col-md-3">
+<h5>EdTech Platforms</h5>
+</div>
 
-<p>Interested in training opportunities across technology programs?</p>
+<div class="col-md-3">
+<h5>Corporate L&D Teams</h5>
+</div>
 
-<button>Apply as Trainer</button>
+<div class="col-md-3">
+<h5>Technology Bootcamps</h5>
+</div>
 
 </div>
 
-<footer>
+</div>
 
-© East Wind Solutions
+</section>
 
-</footer>
+
+<!-- TECHNOLOGY DOMAINS -->
+
+<section class="section bg-light">
+
+<div class="container">
+
+<h2 class="text-center mb-5">Technology Domains</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card p-4">
+<h5>Cloud Computing</h5>
+<p>AWS, Azure, cloud architecture, deployment.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4">
+<h5>DevOps</h5>
+<p>CI/CD pipelines, Kubernetes, automation.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4">
+<h5>Data Science & AI</h5>
+<p>Machine learning, Python, data analytics.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4">
+<h5>Cybersecurity</h5>
+<p>Security architecture, threat detection.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4">
+<h5>Full Stack Development</h5>
+<p>Java, microservices, modern web development.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4">
+<h5>Embedded Systems</h5>
+<p>Automotive, embedded software development.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TRAINER NETWORK -->
+
+<section class="section">
+
+<div class="container text-center">
+
+<h2 class="mb-4">Experienced Technology Trainers</h2>
+
+<p class="mb-5">
+
+Our trainer network includes professionals with strong industry experience who have delivered training programs for corporate engineering teams, professional learners, and certification programs across modern technology stacks.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section class="section bg-light">
+
+<div class="container">
+
+<h2 class="text-center mb-5">How It Works</h2>
+
+<div class="row text-center">
+
+<div class="col-md-3">
+
+<h5>1. Share Requirement</h5>
+
+<p>Organizations share training program details.</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h5>2. Trainer Matching</h5>
+
+<p>We identify trainers with the right expertise.</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h5>3. Program Delivery</h5>
+
+<p>Experienced trainers deliver the training.</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h5>4. Learning Outcomes</h5>
+
+<p>Organizations focus on successful learning results.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2 class="mb-4">Join Our Network of Technology Trainers</h2>
+
+<p class="mb-4">
+
+Interested in training opportunities across modern technology domains?
+
+</p>
+
+<button class="btn btn-light btn-lg">Apply to Join</button>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<p>© East Wind Solutions</p>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
