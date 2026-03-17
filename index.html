@@ -10,94 +10,93 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-<link rel="stylesheet" href="css/styles.css">
 
 <style>
 
 body{
-font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+font-family: system-ui,-apple-system,Segoe UI,Roboto;
 color:#111827;
+background:white;
 }
 
 /* HERO */
 
 .hero{
-background:linear-gradient(120deg,#eef2ff,#f8fafc);
-padding:180px 20px;
-position:relative;
-overflow:hidden;
+background:white;
+padding:160px 20px;
+border-bottom:1px solid #e5e7eb;
 }
 
-/* decorative background shape */
-
-.hero::after{
-content:"";
-position:absolute;
-width:500px;
-height:500px;
-background:#c7d2fe;
-border-radius:50%;
-top:-200px;
-right:-200px;
-opacity:0.4;
-}
-
-/* sections */
+/* SECTIONS */
 
 .section{
 padding:110px 20px;
 }
 
-/* headings */
+.section-light{
+background:#f9fafb;
+}
+
+.section-dark{
+background:white;
+}
+
+/* HEADINGS */
 
 h2{
 font-weight:700;
 letter-spacing:-0.5px;
 }
 
-/* cards */
+/* CARDS */
 
 .card{
-border:none;
-border-radius:16px;
+border:1px solid #e5e7eb;
+border-radius:14px;
 padding:30px;
-box-shadow:0 20px 40px rgba(0,0,0,0.08);
-transition:all .3s ease;
+transition:all .25s ease;
 background:white;
 }
 
 .card:hover{
-transform:translateY(-10px);
-box-shadow:0 30px 60px rgba(0,0,0,0.15);
+transform:translateY(-6px);
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
 }
 
-/* buttons */
+/* BUTTONS */
 
 .btn-primary{
-background:#2563eb;
+background:#111827;
 border:none;
 padding:14px 30px;
-border-radius:10px;
+border-radius:8px;
 }
 
 .btn-outline-primary{
-border-radius:10px;
+border:1px solid #111827;
+color:#111827;
 padding:14px 30px;
+border-radius:8px;
+}
+
+.btn-outline-primary:hover{
+background:#111827;
+color:white;
 }
 
 /* CTA */
 
 .cta{
-background:#1e3a8a;
+background:#111827;
 color:white;
 padding:120px 20px;
 text-align:center;
 }
 
-/* footer */
+/* FOOTER */
 
 .footer{
-background:#111827;
+background:#000;
 color:#9ca3af;
 padding:50px;
 text-align:center;
@@ -111,7 +110,7 @@ text-align:center;
 
 <!-- NAVBAR -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
 
 <div class="container">
 
@@ -172,7 +171,7 @@ Hire Trainers
 <div class="col-md-6 text-center">
 
 <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
-class="img-fluid rounded shadow"
+class="img-fluid rounded"
 style="max-width:480px"
 alt="Technology Training">
 
@@ -187,7 +186,7 @@ alt="Technology Training">
 
 <!-- ECOSYSTEM -->
 
-<section class="section">
+<section class="section section-light">
 
 <div class="container text-center">
 
@@ -213,7 +212,7 @@ East Wind Solutions works with organizations involved in technology education an
 
 <!-- TECHNOLOGY DOMAINS -->
 
-<section class="section bg-light">
+<section class="section section-dark">
 
 <div class="container">
 
@@ -223,42 +222,42 @@ East Wind Solutions works with organizations involved in technology education an
 
 <div class="col-md-4">
 <div class="card">
-<h5><i class="bi bi-cloud-fill text-primary me-2"></i>Cloud Computing</h5>
+<h5><i class="bi bi-cloud-fill me-2"></i>Cloud Computing</h5>
 <p>AWS, Azure, cloud architecture and infrastructure.</p>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="card">
-<h5><i class="bi bi-gear-fill text-primary me-2"></i>DevOps</h5>
+<h5><i class="bi bi-gear-fill me-2"></i>DevOps</h5>
 <p>CI/CD pipelines, automation, Kubernetes.</p>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="card">
-<h5><i class="bi bi-cpu-fill text-primary me-2"></i>AI & Data Science</h5>
+<h5><i class="bi bi-cpu-fill me-2"></i>AI & Data Science</h5>
 <p>Machine learning, Python, data engineering.</p>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="card">
-<h5><i class="bi bi-shield-lock-fill text-primary me-2"></i>Cybersecurity</h5>
+<h5><i class="bi bi-shield-lock-fill me-2"></i>Cybersecurity</h5>
 <p>Security architecture and ethical hacking.</p>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="card">
-<h5><i class="bi bi-code-slash text-primary me-2"></i>Full Stack Development</h5>
+<h5><i class="bi bi-code-slash me-2"></i>Full Stack Development</h5>
 <p>Java, microservices, cloud-native development.</p>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="card">
-<h5><i class="bi bi-motherboard-fill text-primary me-2"></i>Embedded Systems</h5>
+<h5><i class="bi bi-motherboard-fill me-2"></i>Embedded Systems</h5>
 <p>Automotive software and embedded platforms.</p>
 </div>
 </div>
@@ -297,7 +296,6 @@ Apply to Join
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
 
 </body>
 </html>
