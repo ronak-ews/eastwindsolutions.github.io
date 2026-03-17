@@ -9,41 +9,43 @@
 <title>East Wind Solutions</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- CUSTOM STYLESHEET -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 <link rel="stylesheet" href="css/styles.css">
 
 <style>
 
-body{
-font-family: Arial, sans-serif;
-}
-
 .hero{
-background:#f3f6fc;
-padding:100px 20px;
+background:linear-gradient(135deg,#eef2ff,#f8fafc);
+padding:120px 20px;
 }
 
 .section{
-padding:80px 20px;
+padding:100px 20px;
 }
 
 .card{
 border:none;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
+border-radius:12px;
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+transition:all .2s ease;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 20px 45px rgba(0,0,0,0.12);
 }
 
 .cta{
 background:#1e3a8a;
 color:white;
-padding:80px 20px;
+padding:100px 20px;
 text-align:center;
 }
 
 .footer{
 background:#111827;
 color:#9ca3af;
-padding:30px;
+padding:40px;
 text-align:center;
 }
 
@@ -62,9 +64,7 @@ text-align:center;
 <a class="navbar-brand fw-bold" href="index.html">East Wind Solutions</a>
 
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-
 <span class="navbar-toggler-icon"></span>
-
 </button>
 
 <div class="collapse navbar-collapse" id="nav">
@@ -97,21 +97,21 @@ text-align:center;
 
 <div class="col-md-6">
 
-<h1 class="display-5 fw-bold mb-4">
-Expert IT Trainers for Technology Training Programs
+<h1 class="display-4 fw-bold mb-4">
+Expert IT Trainers for Modern Technology Programs
 </h1>
 
 <p class="lead mb-4">
-East Wind Solutions connects experienced technology trainers with organizations delivering corporate training programs, professional certification courses, and technology bootcamps.
+East Wind Solutions connects experienced technology trainers with organizations delivering corporate training programs, certification courses, and technology bootcamps.
 </p>
 
-<button class="btn btn-primary btn-lg me-3">
+<a class="btn btn-primary btn-lg me-3" href="join-trainers.html">
 Join Trainer Network
-</button>
+</a>
 
-<button class="btn btn-outline-primary btn-lg">
+<a class="btn btn-outline-primary btn-lg" href="contact.html">
 Hire Trainers
-</button>
+</a>
 
 </div>
 
@@ -129,6 +129,7 @@ alt="Technology Training">
 
 </section>
 
+
 <!-- ECOSYSTEM -->
 
 <section class="section">
@@ -138,28 +139,15 @@ alt="Technology Training">
 <h2 class="mb-4">Supporting the Technology Training Ecosystem</h2>
 
 <p class="mb-5">
-
-East Wind Solutions collaborates with organizations involved in technology education and workforce development.
-
+East Wind Solutions works with organizations involved in technology education and workforce development.
 </p>
 
 <div class="row">
 
-<div class="col-md-3">
-<h5>IT Training Providers</h5>
-</div>
-
-<div class="col-md-3">
-<h5>EdTech Platforms</h5>
-</div>
-
-<div class="col-md-3">
-<h5>Corporate L&D Teams</h5>
-</div>
-
-<div class="col-md-3">
-<h5>Technology Bootcamps</h5>
-</div>
+<div class="col-md-3"><h5>IT Training Providers</h5></div>
+<div class="col-md-3"><h5>EdTech Platforms</h5></div>
+<div class="col-md-3"><h5>Corporate L&D Teams</h5></div>
+<div class="col-md-3"><h5>Technology Bootcamps</h5></div>
 
 </div>
 
@@ -180,43 +168,43 @@ East Wind Solutions collaborates with organizations involved in technology educa
 
 <div class="col-md-4">
 <div class="card p-4">
-<h5>Cloud Computing</h5>
-<p>AWS, Azure, cloud architecture, deployment.</p>
+<h5><i class="bi bi-cloud-fill text-primary me-2"></i>Cloud Computing</h5>
+<p>AWS, Azure, cloud architecture and infrastructure.</p>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="card p-4">
-<h5>DevOps</h5>
-<p>CI/CD pipelines, Kubernetes, automation.</p>
+<h5><i class="bi bi-gear-fill text-primary me-2"></i>DevOps</h5>
+<p>CI/CD pipelines, automation, Kubernetes.</p>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="card p-4">
-<h5>Data Science & AI</h5>
-<p>Machine learning, Python, data analytics.</p>
+<h5><i class="bi bi-cpu-fill text-primary me-2"></i>AI & Data Science</h5>
+<p>Machine learning, Python, data engineering.</p>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="card p-4">
-<h5>Cybersecurity</h5>
-<p>Security architecture, threat detection.</p>
+<h5><i class="bi bi-shield-lock-fill text-primary me-2"></i>Cybersecurity</h5>
+<p>Security architecture and ethical hacking.</p>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="card p-4">
-<h5>Full Stack Development</h5>
-<p>Java, microservices, modern web development.</p>
+<h5><i class="bi bi-code-slash text-primary me-2"></i>Full Stack Development</h5>
+<p>Java, microservices, cloud-native development.</p>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="card p-4">
-<h5>Embedded Systems</h5>
-<p>Automotive, embedded software development.</p>
+<h5><i class="bi bi-motherboard-fill text-primary me-2"></i>Embedded Systems</h5>
+<p>Automotive software and embedded platforms.</p>
 </div>
 </div>
 
@@ -227,65 +215,116 @@ East Wind Solutions collaborates with organizations involved in technology educa
 </section>
 
 
-<!-- TRAINER NETWORK -->
+<!-- TRAINER OPPORTUNITIES -->
 
 <section class="section">
 
-<div class="container text-center">
+<div class="container">
 
-<h2 class="mb-4">Experienced Technology Trainers</h2>
+<h2 class="text-center mb-5">Training Opportunities</h2>
 
-<p class="mb-5">
+<div class="row g-4">
 
-Our trainer network includes professionals with strong industry experience who have delivered training programs for corporate engineering teams, professional learners, and certification programs across modern technology stacks.
+<div class="col-md-4">
+<div class="card p-4">
+<h5>Cloud Bootcamps</h5>
+<p>Enterprise cloud architecture training programs.</p>
+</div>
+</div>
 
-</p>
+<div class="col-md-4">
+<div class="card p-4">
+<h5>DevOps Certification Programs</h5>
+<p>Kubernetes, CI/CD and automation programs.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4">
+<h5>AI Enterprise Programs</h5>
+<p>Machine learning training for engineering teams.</p>
+</div>
+</div>
+
+</div>
 
 </div>
 
 </section>
 
 
-<!-- HOW IT WORKS -->
+<!-- TESTIMONIALS -->
 
 <section class="section bg-light">
 
 <div class="container">
 
-<h2 class="text-center mb-5">How It Works</h2>
+<h2 class="text-center mb-5">What Trainers Say</h2>
 
-<div class="row text-center">
+<div class="row">
 
-<div class="col-md-3">
+<div class="col-md-4">
+<div class="card p-4">
+<p>"Great coordination and strong training programs."</p>
+<strong>Senior DevOps Trainer</strong>
+</div>
+</div>
 
-<h5>1. Share Requirement</h5>
+<div class="col-md-4">
+<div class="card p-4">
+<p>"Excellent opportunities across enterprise training."</p>
+<strong>Cloud Trainer</strong>
+</div>
+</div>
 
-<p>Organizations share training program details.</p>
+<div class="col-md-4">
+<div class="card p-4">
+<p>"A reliable network for professional instructors."</p>
+<strong>AI Instructor</strong>
+</div>
+</div>
 
 </div>
 
-<div class="col-md-3">
-
-<h5>2. Trainer Matching</h5>
-
-<p>We identify trainers with the right expertise.</p>
-
 </div>
 
-<div class="col-md-3">
+</section>
 
-<h5>3. Program Delivery</h5>
 
-<p>Experienced trainers deliver the training.</p>
+<!-- FAQ -->
 
+<section class="section">
+
+<div class="container">
+
+<h2 class="text-center mb-5">Frequently Asked Questions</h2>
+
+<div class="accordion" id="faq">
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+How do trainers get selected?
+</button>
+</h2>
+<div id="faq1" class="accordion-collapse collapse show">
+<div class="accordion-body">
+Trainers are matched to programs based on expertise and experience.
+</div>
+</div>
 </div>
 
-<div class="col-md-3">
-
-<h5>4. Learning Outcomes</h5>
-
-<p>Organizations focus on successful learning results.</p>
-
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+What types of programs are available?
+</button>
+</h2>
+<div id="faq2" class="accordion-collapse collapse">
+<div class="accordion-body">
+Corporate training, certification programs, and technology bootcamps.
+</div>
+</div>
 </div>
 
 </div>
@@ -299,15 +338,15 @@ Our trainer network includes professionals with strong industry experience who h
 
 <section class="cta">
 
-<h2 class="mb-4">Join Our Network of Technology Trainers</h2>
+<h2 class="mb-4">Join Our Trainer Network</h2>
 
 <p class="mb-4">
-
-Interested in training opportunities across modern technology domains?
-
+Work with organizations delivering technology training programs.
 </p>
 
-<button class="btn btn-light btn-lg">Apply to Join</button>
+<a href="join-trainers.html" class="btn btn-light btn-lg">
+Apply to Join
+</a>
 
 </section>
 
@@ -322,10 +361,7 @@ Interested in training opportunities across modern technology domains?
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- CUSTOM JAVASCRIPT -->
 <script src="js/script.js"></script>
 
 </body>
-
 </html>
