@@ -3,86 +3,178 @@
 <head>
 <title>East Wind Solutions</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
+
 body{
 font-family: Arial, sans-serif;
 margin:0;
-background:#f4f6f8;
+background:#f5f7fa;
 color:#333;
 }
 
-header{
-background:#1f2937;
+nav{
+background:#111827;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav h2{
 color:white;
-padding:30px;
+margin:0;
+font-size:20px;
+}
+
+nav a{
+color:#ddd;
+text-decoration:none;
+margin-left:20px;
+font-size:14px;
+}
+
+header{
+background:linear-gradient(120deg,#1f2937,#374151);
+color:white;
+padding:100px 20px;
 text-align:center;
 }
 
-section{
-padding:40px;
-max-width:900px;
-margin:auto;
+header h1{
+font-size:42px;
+margin-bottom:10px;
 }
 
-h2{
-color:#1f2937;
+header p{
+font-size:18px;
+opacity:0.9;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:60px 20px;
+}
+
+.section-title{
+font-size:28px;
+margin-bottom:20px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h3{
+margin-top:0;
 }
 
 footer{
 background:#111;
-color:white;
+color:#ccc;
 text-align:center;
-padding:20px;
+padding:30px;
+margin-top:60px;
 }
+
 </style>
 </head>
 
 <body>
+
+<nav>
+<h2>East Wind Solutions</h2>
+<div>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#network">Trainers</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
 
 <header>
 <h1>East Wind Solutions</h1>
 <p>Trainer Supply Partner for Corporate Training Programs</p>
 </header>
 
-<section>
-<h2>About Us</h2>
+<div class="container" id="about">
+<h2 class="section-title">About Us</h2>
+
 <p>
 East Wind Solutions provides experienced trainers for corporate training programs,
 bootcamps, and academic upskilling initiatives. We support training companies
 and organizations by providing reliable trainers across key technology domains.
 </p>
-</section>
 
-<section>
-<h2>Services</h2>
-<ul>
-<li>Corporate Technical Training</li>
-<li>Trainer On Demand</li>
-<li>Bootcamp Training Delivery</li>
-<li>University Finishing School Programs</li>
-</ul>
-</section>
+</div>
 
-<section>
-<h2>Trainer Network</h2>
+<div class="container" id="services">
+<h2 class="section-title">Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Corporate Technical Training</h3>
+<p>Experienced trainers for corporate upskilling programs.</p>
+</div>
+
+<div class="card">
+<h3>Trainer On Demand</h3>
+<p>Quick access to reliable trainers for urgent requirements.</p>
+</div>
+
+<div class="card">
+<h3>Bootcamp Delivery</h3>
+<p>Support for intensive training bootcamps and programs.</p>
+</div>
+
+<div class="card">
+<h3>University Programs</h3>
+<p>Industry trainers for finishing school and academic programs.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="container" id="network">
+
+<h2 class="section-title">Trainer Network</h2>
+
 <p>
 We work with a growing network of experienced trainers across India with
 expertise in Data Science, Cloud Computing, DevOps, Software Development,
 and Embedded Systems.
 </p>
-</section>
 
-<section>
-<h2>Contact</h2>
+</div>
+
+<div class="container" id="contact">
+
+<h2 class="section-title">Contact</h2>
+
 <p>
-Ronak Sheikh<br>
-East Wind Solutions<br>
+<b>Ronak Sheikh</b><br>
+East Wind Solutions<br><br>
+
 Email: contact@eastwindsolutions.in
 </p>
-</section>
+
+</div>
 
 <footer>
-<p>© East Wind Solutions</p>
+© East Wind Solutions
 </footer>
 
 </body>
