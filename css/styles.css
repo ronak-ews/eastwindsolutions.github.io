@@ -9,21 +9,26 @@ padding-top:56px;
 
 .navbar{
 background:#0f172a;
-}
-
-.navbar .nav-link{
-color:white !important;
-margin-left:12px;
-font-weight:500;
-}
-
-.navbar .nav-link:hover{
-opacity:0.8;
+box-shadow:0 4px 20px rgba(0,0,0,0.15);
+padding:12px 0;
 }
 
 .navbar-brand{
-color:white !important;
 font-weight:700;
+font-size:20px;
+color:white !important;
+letter-spacing:0.2px;
+}
+
+.nav-link{
+color:#e5e7eb !important;
+margin-left:14px;
+font-weight:500;
+transition:color .2s ease;
+}
+
+.nav-link:hover{
+color:#f59e0b !important;
 }
 
 /* HERO */
@@ -56,6 +61,8 @@ max-width:720px;
 height:auto;
 display:block;
 margin:auto;
+border-radius:18px;
+box-shadow:0 40px 80px rgba(0,0,0,0.15);
 }
 
 /* SECTIONS */
@@ -109,14 +116,14 @@ height:100%;
 }
 
 .feature-card:hover{
-transform:translateY(-6px);
-box-shadow:0 20px 40px rgba(0,0,0,0.08);
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 25px 60px rgba(0,0,0,0.12);
 }
 
 .feature-icon{
-font-size:36px;
-margin-bottom:16px;
-color:#111827;
+font-size:34px;
+margin-bottom:18px;
+color:#2F5DA9;
 }
 
 /* CTA */
