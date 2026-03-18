@@ -6,7 +6,7 @@ margin:0;
 padding:0;
 background:#ffffff;
 color:#0f172a;
-padding-top:70px;
+padding-top:64px;
 }
 
 
@@ -39,12 +39,12 @@ color:#f59e0b !important;
 
 .hero{
 background:white;
-padding:90px 20px 70px 20px;
+padding:60px 20px 50px 20px;
 border-bottom:1px solid #e5e7eb;
 }
 
 .hero h1{
-font-size:58px;
+font-size:54px;
 font-weight:800;
 line-height:1.05;
 letter-spacing:-1px;
@@ -103,7 +103,7 @@ color:white;
 /* SECTION SPACING */
 
 .section{
-padding:90px 20px;
+padding:70px 20px;
 }
 
 .section-light{
@@ -159,7 +159,7 @@ color:#2F5DA9;
 .cta{
 background:#2F5DA9;
 color:white;
-padding:100px 20px;
+padding:90px 20px;
 text-align:center;
 }
 
@@ -185,7 +185,7 @@ border-radius:10px;
 .footer{
 background:#020617;
 color:#9ca3af;
-padding:60px;
+padding:50px;
 text-align:center;
 font-size:14px;
 }
@@ -197,7 +197,7 @@ font-size:14px;
 
 .hero{
 text-align:center;
-padding:80px 20px 60px 20px;
+padding:50px 20px 40px 20px;
 }
 
 .hero h1{
@@ -215,7 +215,7 @@ max-width:100%;
 }
 
 .section{
-padding:70px 20px;
+padding:60px 20px;
 }
 
 }
