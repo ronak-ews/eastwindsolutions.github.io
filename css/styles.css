@@ -1,3 +1,103 @@
+/* GLOBAL */
+
+body{
+font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+color:#111827;
+background:white;
+padding-top:56px;
+margin:0;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+background:#0f172a;
+padding:12px 0;
+}
+
+.navbar .nav-link{
+color:white !important;
+margin-left:12px;
+font-weight:500;
+}
+
+.navbar .nav-link:hover{
+opacity:0.8;
+}
+
+.navbar-brand{
+color:white !important;
+font-weight:700;
+}
+
+
+/* HERO */
+
+.hero{
+background:white;
+padding:40px 20px;
+border-bottom:1px solid #e5e7eb;
+}
+
+.hero h1{
+font-size:52px;
+font-weight:800;
+line-height:1.05;
+letter-spacing:-1px;
+max-width:650px;
+}
+
+.hero p{
+font-size:20px;
+color:#6b7280;
+max-width:520px;
+margin-bottom:25px;
+}
+
+
+/* HERO IMAGE */
+
+.hero-image{
+width:100%;
+max-width:720px;
+height:auto;
+display:block;
+margin:auto;
+}
+
+
+/* SECTIONS */
+
+.section{
+padding:55px 20px;
+}
+
+.section-light{
+background:#f9fafb;
+}
+
+
+/* TYPOGRAPHY */
+
+h2{
+font-size:36px;
+font-weight:800;
+letter-spacing:-0.5px;
+margin-bottom:20px;
+}
+
+.section p{
+font-size:18px;
+color:#6b7280;
+}
+
+.section h5{
+font-weight:600;
+color:#374151;
+}
+
+
 /* BUTTONS */
 
 .btn-primary,
@@ -14,7 +114,7 @@ transition:all .2s ease;
 
 }
 
-/* Hover state */
+/* hover */
 
 .btn-primary:hover,
 .btn-outline-primary:hover{
@@ -22,5 +122,95 @@ transition:all .2s ease;
 background:#2F5DA9;
 border-color:#2F5DA9;
 color:white;
+
+}
+
+
+/* BUTTON SPACING */
+
+.hero .btn{
+margin-right:12px;
+}
+
+
+/* FEATURE CARDS */
+
+.feature-card{
+border:1px solid #e5e7eb;
+border-radius:16px;
+padding:40px 30px;
+background:white;
+transition:all .25s ease;
+height:100%;
+}
+
+.feature-card:hover{
+transform:translateY(-6px);
+box-shadow:0 20px 40px rgba(0,0,0,0.08);
+}
+
+.feature-icon{
+font-size:36px;
+margin-bottom:16px;
+color:#111827;
+}
+
+
+/* CTA */
+
+.cta{
+background:#111827;
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+.cta h2{
+margin-bottom:20px;
+}
+
+.cta p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+
+/* FOOTER */
+
+.footer{
+background:#000;
+color:#9ca3af;
+padding:50px;
+text-align:center;
+font-size:14px;
+}
+
+
+/* MOBILE OPTIMIZATION */
+
+@media (max-width:768px){
+
+.hero{
+text-align:center;
+padding:40px 20px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:18px;
+margin:auto;
+}
+
+.hero-image{
+margin-top:40px;
+max-width:100%;
+}
+
+.section{
+padding:40px 20px;
+}
 
 }
